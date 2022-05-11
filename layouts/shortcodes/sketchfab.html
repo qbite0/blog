@@ -1,0 +1,16 @@
+<div class="sketchfab-embed-wrapper">
+    <iframe
+        frameborder="0"
+        allowfullscreen
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+        allow="autoplay; fullscreen; xr-spatial-tracking"
+        xr-spatial-tracking
+        execution-while-out-of-viewport
+        execution-while-not-rendered
+        web-share
+        {{ if .Get "width" }} width="{{ .Get "width" }}" {{ end }}
+        {{ if .Get "height" }} height="{{ .Get "height" }}" {{ end }}
+        src="https://sketchfab.com/models/{{ .Get "id" }}/embed?ui_theme=dark&dnt=1"
+    ></iframe>
+</div>

@@ -1,0 +1,64 @@
+baseURL: "https://qbite.page.dev/"
+title: qBite
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: UA-123-45
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+          main:
+            - name: Archive
+              url: archives
+            - name: Search
+              url: search/
+            - name: Tags
+              url: tags/
+            - name: Categories
+              url: categories/
+
+    ru:
+        languageName: "Русский"
+        weight: 2
+        menu:
+          main:
+            - name: Архив
+              url: archives
+            - name: Поиск
+              url: search/
+            - name: Теги
+              url: tags/
+            - name: Категории
+              url: categories/
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: qBite
+  description: "qBite personal site"
+  keywords: [Blog]
+  author: qBite
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: true
+
+  editPost:
+    URL: "https://github.com/qbite0/qbite0.github.io/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
