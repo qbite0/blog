@@ -59,6 +59,6 @@ params:
   TocOpen: true
 
   editPost:
-    URL: "https://github.com/qbite0/qbite0.github.io/content"
+    URL: "https://github.com/qbite0/blog/blob/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
