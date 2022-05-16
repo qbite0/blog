@@ -1,7 +1,7 @@
 ---
 title: "Model addon development for Garry's Mod"
 date: 2022-05-06T01:04:57+07:00
-tags: ["Garry's Mod", "Modding"]
+tags: ["Modding"]
 summary: "Model addon creating, which includes model."
 author: "qBite"
 ---
