@@ -24,6 +24,12 @@ languages:
               url: tags/
             - name: Categories
               url: categories/
+        profileMode:
+          enabled: true
+          title: "qBite"
+          buttons:
+            - name: Posts
+              url: "/posts"
 
     ru:
         languageName: "Русский"
@@ -38,7 +44,12 @@ languages:
               url: tags/
             - name: Категории
               url: categories/
-
+        profileMode:
+          enabled: true
+          title: "qBite"
+          buttons:
+            - name: Посты
+              url: "/ru/posts"
 minify:
   disableXML: true
   minifyOutput: true
