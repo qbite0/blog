@@ -1,0 +1,6 @@
+<iframe 
+    frameborder="0"
+    {{ if .Get "width" }} width="{{ .Get "width" }}" {{ end }}
+    height="190"
+    src="https://store.steampowered.com/widget/{{ .Get "id" }}"
+></iframe>
