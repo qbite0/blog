@@ -74,8 +74,10 @@ neutralino.js
 ```
 В ``package.json`` изменим скрипт сборки добавив сборку neutralino:
 ```json
-"scripts": {
-  "build": "react-scripts build && neu build"
+{
+  "scripts": {
+    "build": "react-scripts build && neu build"
+  }
 }
 ```
 После этого обновим neutralino запустив команду:
@@ -89,8 +91,8 @@ neu update
 ```js
 window.Neutralino.init();
 ```
-И изменим ``App.js`` файл:
-```js
+И изменим ``App.jsx`` файл:
+```jsx
 import { useState, useEffect } from 'react';
 
 import logo from './logo.svg';
@@ -144,8 +146,10 @@ npm i concurrently
 ```
 В ``package.json`` добавим следующий скрипт для разработки:
 ```json
-"scripts": {
-    "dev": "concurrently --kill-others \"BROWSER=false react-scripts start\" \"neu run --frontend-lib-dev\""
+{
+  "scripts": {
+      "dev": "concurrently --kill-others \"BROWSER=false react-scripts start\" \"neu run --frontend-lib-dev\""
+  }
 }
 ```
 * ``react-scripts start`` - запускает dev сервер react'а.
