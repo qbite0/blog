@@ -20,12 +20,12 @@ dog # корень аддона
 
 ## Полезные инструменты для создания аддонов
 #### Плагины для программ моделирования
-* [Blender source tools](http://steamreview.org/BlenderSourceTools/) - аддон для Blender, который добавляет возможность экспортировать модель в формат ``.smd`` (Studiomdl Data).
+* [Blender source tools [Скачать]](http://steamreview.org/BlenderSourceTools/) - аддон для Blender, который добавляет возможность экспортировать модель в формат ``.smd`` (Studiomdl Data).
 #### Утилиты для моддинга
-* [Crowbar](https://github.com/ZeqMacaw/Crowbar/releases/latest) - программа, которая позволяет компилировать и декомпилировать модели аддонов, а также создавать ``.gma`` файлы и опубликовывать их в workshop.
+* [Crowbar [Скачать]](https://github.com/ZeqMacaw/Crowbar/releases/latest) - программа, которая позволяет компилировать и декомпилировать модели аддонов, а также создавать ``.gma`` файлы и опубликовывать их в workshop.
 #### Программы для редактирования текстур и материалов
-* [VTFEdit](https://nemstools.github.io/pages/VTFLib-Download.html) - программа для редактирования ``.vmt`` материалов и ``.vtf`` текстур.
-* [VMTEditor](https://github.com/Dima-369/VMT-Editor/releases/latest) - программа для редактирования ``.vmt`` материалов
+* [VTFEdit [Скачать]](https://nemstools.github.io/pages/VTFLib-Download.html) - программа для редактирования ``.vmt`` материалов и ``.vtf`` текстур.
+* [VMTEditor [Скачать]](https://github.com/Dima-369/VMT-Editor/releases/latest) - программа для редактирования ``.vmt`` материалов
 
 ## Редактирование 3D модели
 Для этого гайда я буду использовать вот эту модель со sketchfab:
@@ -43,7 +43,7 @@ dog # корень аддона
 Для того чтобы скомпилировать модель в читаемый для движка Source вид, необходимо экспортировать модель в формат ``.smd``. Экспорт модели в формате ``.smd`` требует наличия ``Blender source tools`` аддона для Blender.
 
 #### Установка ``Blender source tools``
-Скачиваем [Blender source tools](http://steamreview.org/BlenderSourceTools/) **НО не разархивируем его**, переходим в Blender и открываем вкладку ``Edit > Preferences``.
+Скачиваем [Blender source tools [Скачать]](http://steamreview.org/BlenderSourceTools/) **НО не разархивируем его**, переходим в Blender и открываем вкладку ``Edit > Preferences``.
 ![Окно "Preferences"](install-blender-source-tools/preferences.png)
 В открывшемся окне ``Preferences`` переходим во вкладку ``Addons`` и нажимаем на кнопку ``Install``, выбираем ``blender_source_tools_<версия>.zip``.
 ![Кнопка "Install"](install-blender-source-tools/addons.png)
@@ -54,7 +54,7 @@ dog # корень аддона
 ![Экспорт модели](model/export.png)
 
 ## Комплирование модели
-Полученный на прошлом этапе файл модели в формате ``.smd`` теперь нужно скомпилировать в ``.mdl``. Для этого понадобится программа [Crowbar](https://github.com/ZeqMacaw/Crowbar/releases/latest). Создадим рядом с ``.smd`` моделью файл с расширением ``.qc`` в котором напишем следующие строчки:
+Полученный на прошлом этапе файл модели в формате ``.smd`` теперь нужно скомпилировать в ``.mdl``. Для этого понадобится программа [Crowbar [Скачать]](https://github.com/ZeqMacaw/Crowbar/releases/latest). Создадим рядом с ``.smd`` моделью файл с расширением ``.qc`` в котором напишем следующие строчки:
 ```php
 $modelname "dog/dog.mdl" // Путь до модели относительно папки models/ в корне аддона
 $cdmaterials "dog" // Папка в которой хранятся материалы для модели относительно папки materials/ в корне аддона
@@ -76,7 +76,7 @@ $sequence "idle" "dog.smd" // Анимация модели
 > ![Set Up Games](compiling/set-up-games.png)
 
 ## Текстуры и материалы
-Текстуры в движке source хранятся в формате ``.vtf``, а материалы в ``.vmt``. Для того чтобы конвертировать текстуры из ``.png`` в ``.vtf`` открываем [VTFEdit](https://nemstools.github.io/pages/VTFLib-Download.html) и в ``File > Import`` выбираем ``.png`` файл. В открывшемся окне ничего не меняем и нажимаем ``OK``
+Текстуры в движке source хранятся в формате ``.vtf``, а материалы в ``.vmt``. Для того чтобы конвертировать текстуры из ``.png`` в ``.vtf`` открываем [VTFEdit [Скачать]](https://nemstools.github.io/pages/VTFLib-Download.html) и в ``File > Import`` выбираем ``.png`` файл. В открывшемся окне ничего не меняем и нажимаем ``OK``
 ![Импорт текстуры](texture.png)
 После того как текстура открылась в окне предпросмотра нажимаем ``Save As`` и сохраняем текстуру в папке ``/materials/dog/default_Base_Color.vtf``. Также создадим файл ``dog.vmt`` в котором напишем:
 ```php
@@ -86,7 +86,7 @@ VertexLitGeneric // Один из доступных шейдеров
 	$basetexture "dog/default_Base_Color" // Основная текстура
 }
 ```
-Для более подробной и простой настройки материалов модели можно воспользоваться программой [VMTEditor](https://github.com/Dima-369/VMT-Editor/releases/latest), которая позволяет не только сгенерировать код и сохранить материал, но также просматривать внешний вид материала при изменении не запуская игру.
+Для более подробной и простой настройки материалов модели можно воспользоваться программой [VMTEditor [Скачать]](https://github.com/Dima-369/VMT-Editor/releases/latest), которая позволяет не только сгенерировать код и сохранить материал, но также просматривать внешний вид материала при изменении не запуская игру.
 ![VMTEditor](vmteditor.png)
 ## Тестирование  аддона (результат)
 Папку с аддоном нужно переместить в ``GarrysMod\garrysmod\addons``. Заходим в Garry's Mod, заупускаем одиночную игру, пишем в списке пропов "dog" и спавним модельку.

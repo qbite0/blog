@@ -8,7 +8,7 @@ tags: [".NET", "C#"]
 ## Установка и настройка MySQL сервера
 ### Установка сервера
 
-Для начала работы нам потребуется MySQL Community server и .NET Connector. Чтобы не ставить и настраивать сервер можно воспользоваться [MySQL Installer'ом](https://dev.mysql.com/downloads/installer/). Зайдём в MySQL Installer и нажмём ``Add``.
+Для начала работы нам потребуется MySQL Community server и .NET Connector. Чтобы не ставить и настраивать сервер можно воспользоваться [MySQL Installer'ом [Скачать]](https://dev.mysql.com/downloads/installer/). Зайдём в MySQL Installer и нажмём ``Add``.
 
 ![Добавление продукта](add-product.png)
 

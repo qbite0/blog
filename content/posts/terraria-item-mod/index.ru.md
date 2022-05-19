@@ -9,7 +9,7 @@ draft: true
 
 ## Подготовка
 ### Visual Studio Installer
-Для начала скачиваем [Visual Studio 2022](https://visualstudio.microsoft.com/ru/downloads/).
+Для начала скачиваем [Visual Studio 2022 [Скачать]](https://visualstudio.microsoft.com/ru/downloads/).
 
 > Примечание: выбрать нужно имеено последнюю Visual Studio 2022 т.к tModLoader для Terraria v1.4 работает с пакетом .NET Framework 4.8.
 
